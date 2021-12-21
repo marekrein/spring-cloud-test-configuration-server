@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: file:///home/kriipi/Dokumendid/Projektid/Isiklikud/mikroteenused/confic-server/src/main/resources/config/licensingservice todo see on failipõhine
+        git:
+          uri: https://github.com/marekrein/spring-cloud-test-git/
+          search-paths: licensingservice
+          username: marekrein
+          password: "{cipher}e7f5d400a0094ff60d3f9de96d0f4096fd617e96630c1fcd1169fc1034d14317"
+          default-label: master
